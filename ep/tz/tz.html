@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Гос стандарт</title>
+  <style type="text/css">
+   #title {
+    line-height: 0; /* Изменяем межстрочное расстояние */
+   }
+   #title img {
+    border: none; /* Убираем рамку вокруг изображения */
+   }
+  </style>
+ </head>
+ <body> 
+ <script type="text/javascript">
+function l_image (a) {
+    document.example_img.src=a
+}
+</script>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr align="center" valign="center">
+ <td width="350" height="200" valign="top">
+   <div id="title"><img src="shema3.jpg" width="482" height="445" alt="Навигация по сайту"
+    usemap="#Navigation"></div>
+   <p><map id="Navigation" name="Navigation">
+    <area shape="rect" coords="10,110,220,160" href="javascript:l_image ('1.jpg')" alt="Ссылка на изображение №1">
+    <area shape="rect" coords="10,190,220,250" href="javascript:l_image ('2.jpg')" alt="Ссылка на изображение №2">
+    <area shape="rect" coords="10,280,220,340" href="javascript:l_image ('3.jpg')" alt="Ссылка на изображение №3">
+    <area shape="rect" coords="10,370,220,420" href="список3.html" alt="Ссылка на изображение №4">
+	<area shape="rect" coords="90,110,450,160" href="javascript:l_image ('5.jpg')" alt="Ссылка на изображение №5">
+	<area shape="rect" coords="90,190,450,250" href="javascript:l_image ('6.jpg')" alt="Ссылка на изображение №6">
+	<area shape="rect" coords="90,280,450,340" href="javascript:l_image ('7.jpg')" alt="Ссылка на изображение №7">
+	<area shape="rect" coords="90,370,450,420" href="javascript:l_image ('8.jpg')" alt="Ссылка на изображение №8">
+	<area shape="rect" coords="10,30,450,100" href="javascript:l_image ('0.jpg')" alt="Ссылка на изображение №0">
+   </map></p>
+ </td>
+ <td width="150" height="100" valign="top"></td>
+ <td width="350" height="200" valign="top">
+  <img src="0.jpg" name="example_img"
+  alt="Картинки для демонстрации работы скрипта смены изображений">
+ </td>
+</tr>
+</table>
+
+ </body>
+</html>

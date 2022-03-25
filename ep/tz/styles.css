@@ -1,0 +1,71 @@
+* {/*Отспуты для всех элементов по умолчанию нулевые*/
+          margin: 0; 
+          padding: 0;
+}
+
+html, body { /*Высота страницы максимальная*/
+          height: 100%;
+}
+
+.frame { /*Основная область страницы*/
+          min-height: 100%;
+          margin : auto;
+
+          width : 1000px;
+}
+
+* html .frame { /*Инструкция для Internet Explorer, который может не обрабатывать свойство min-height*/
+          height: 100%;
+}
+
+
+.header { /*верхняя часть (header)*/
+          height: 100px;
+          background-color : #eee; 
+          border-radius : 5px;
+}
+
+.footer-proxy { /*Заглушка для нижней части, резервирующая элементу footer место*/
+	  height: 100px;
+          clear : both;
+}
+
+.footer { /*нижняя часть (footer)*/
+          height: 100px;
+          margin-top: -100px;
+          clear : both;
+          background-color : #eee; 
+          border-radius : 5px;
+}
+
+.main {/*Стиль div основной области (main)*/
+          clear : both;
+}
+
+.main-side-left {/*Стиль div левой части основной области*/
+ 	  margin : 0px;
+          float : left; /*Плавающий блок, сдвигающийся влево*/
+          width : 200px;
+}
+
+.main-side-right {/*Стиль div правой части основной области*/
+ 	  margin : 0px;
+          float : right; /*Плавающий блок, сдвигающийся справо*/
+          width : 200px;
+}
+
+.main-center {/*Стиль div центральной части основной области*/
+ 	  margin-left  : 200px; 
+ 	  margin-right : 200px;
+          clear : none;
+}
+
+.data { /*блок с данными*/
+
+	  border : 1px solid #eee;
+          border-radius : 5px;
+          background-color : #fff; 
+
+          margin:5px;
+          padding:5px;
+}
